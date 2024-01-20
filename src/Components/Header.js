@@ -1,31 +1,20 @@
 import React from "react";
+import "./Header.css"
+import { Link, NavLink } from "react-router-dom";
+
 
 const Header = () => {
   return (
-    <div>
-      <header className="hide-when-mobile">
-        <h1>c4a.dev</h1>
+    <div className="myheader">
+      <header className="hide-when-mobile loai">
+        <Link to="/">
+        <h1 className="h1h1">c4a.dev</h1>
+        </Link>
         <ul className="flex">
-        <li className="main-list">
-            <a className="main-link" href="\">
-              Home
-            </a>
-            {/* <ul className="sub-ul">
-              <li>
-                <a href="">Full Course</a>
-              </li>
-              <li>
-                <a href="">Crash Course</a>
-              </li>
-              <li>
-                <a href="">learn in 1h</a>
-              </li>
-            </ul> */}
-          </li>
           <li className="main-list">
-            <a className="main-link" href="\html">
+            <NavLink className="main-link" to="/html">
               HTML
-            </a>
+            </NavLink>
             {/* <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -39,9 +28,9 @@ const Header = () => {
             </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="\css">
+            <NavLink className="main-link" to="/css">
               CSS
-            </a>
+            </NavLink>
             {/* <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
@@ -66,9 +55,9 @@ const Header = () => {
             </ul> */}
           </li>
           <li className="main-list">
-            <a className="main-link" href="\JavaScript">
+            <NavLink className="main-link" to="/JavaScript">
               JavaScript
-            </a>
+            </NavLink>
             {/* <ul className="sub-ul sub-of-js">
               <li>
                 <a href="">coming soon🔥</a>
@@ -78,7 +67,7 @@ const Header = () => {
         </ul>
       </header>
 
-      {/* <header style={{ backgroundColor: "red" }} className="show-when-mobile">
+      <header  className="show-when-mobile">
         <h1>c4a.dev ***</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
@@ -145,7 +134,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </header> */}
+      </header>
     </div>
   );
 };

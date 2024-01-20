@@ -8,8 +8,6 @@ import JavaScript from "./pages/JavaScript";
 function App() {
   return (
     <div className="App">
-      <h1 style={{ color: "red" }}>Welcome to react router</h1>
-
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/css" element={<Css />}></Route>
