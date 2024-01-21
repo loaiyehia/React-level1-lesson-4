@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import {  HelmetProvider } from 'react-helmet-async';
 
 // const router = createBrowserRouter([
@@ -37,3 +38,4 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+serviceWorkerRegistration.register();
