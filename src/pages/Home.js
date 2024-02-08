@@ -16,10 +16,9 @@ const Home = () => {
         }
     `}</style>
       </Helmet>
-      <Header />
-<h1>loaiiiiiiiiiiiiiiiiiiii</h1>
-      <MainContent namepage="Home" desginer="Desgined By Loai Yehia" />
 
+      <Header />
+      <MainContent namepage="Home" desginer="Desgined By Loai Yehia" />
       <Footer />
     </>
   );

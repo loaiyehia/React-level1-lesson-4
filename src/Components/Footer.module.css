@@ -5,7 +5,9 @@ footer {
   font-size: 18px;
 }
 
-
+.Dark .loai{
+  background-color: #9e4673 !important
+}
 .loai{
   background-color: teal;
 }

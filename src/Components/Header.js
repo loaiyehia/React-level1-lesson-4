@@ -1,15 +1,24 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 import { Link, NavLink } from "react-router-dom";
+import "../Theme.css"
+// level 2 //////
+import { useContext } from "react";
+import ThemeContexttt from "../Store/ThemeContext";
 
 
 const Header = () => {
+  const ctx = useContext(ThemeContexttt);
   return (
     <div className="myheader">
       <header className="hide-when-mobile loai">
         <Link to="/">
-        <h1 className="h1h1">c4a.dev</h1>
+          <h1 className="h1h1">c4a.dev</h1>
         </Link>
+        <button onClick={() => {
+          ctx.changeTheme(ctx.theme==="Light"?"Dark":"Light")
+        }} className="theme-btn" >{ctx.theme}</button>
+
         <ul className="flex">
           <li className="main-list">
             <NavLink className="main-link" to="/html">
@@ -67,9 +76,10 @@ const Header = () => {
         </ul>
       </header>
 
-      <header  className="show-when-mobile loai">
-        <h1 style={{color:"white"}}>
-          <Link to="/">c4a.dev</Link></h1>
+      <header className="show-when-mobile loai">
+        <h1 style={{ color: "white" }}>
+          <Link to="/">c4a.dev</Link>
+        </h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>

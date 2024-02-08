@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import {  HelmetProvider } from 'react-helmet-async';
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import { HelmetProvider } from "react-helmet-async";
+import { ThemeProvider } from "./Store/ThemeContext";
+// level 2 /////////
 
 // const router = createBrowserRouter([
 //   {
@@ -33,7 +35,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <HelmetProvider>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
