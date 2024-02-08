@@ -24,13 +24,13 @@
   box-shadow: 0 0 0 5px #3d4a59,0 0 0 6px #fff;
 }
 
-.Dark{
+.Light{
 
   background-color: #242424;
 }
-.Dark main{
+.Light main{
   color: rgb(255, 255, 255,0.87);
 }
-.Dark .loai{
+.Light .loai{
   background-color: #555 !important
 }

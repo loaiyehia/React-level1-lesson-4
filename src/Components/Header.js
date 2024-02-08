@@ -16,7 +16,7 @@ const Header = () => {
           <h1 className="h1h1">c4a.dev</h1>
         </Link>
         <button onClick={() => {
-          ctx.changeTheme(ctx.theme==="Light"?"Dark":"Light")
+          ctx.changeTheme(ctx.theme==="Dark"?"Light":"Dark")
         }} className="theme-btn" >{ctx.theme}</button>
 
         <ul className="flex">
