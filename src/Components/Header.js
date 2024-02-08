@@ -15,9 +15,15 @@ const Header = () => {
         <Link to="/">
           <h1 className="h1h1">c4a.dev</h1>
         </Link>
-        <button onClick={() => {
+        {/* <button onClick={() => {
           ctx.changeTheme(ctx.theme==="Dark"?"Light":"Dark")
-        }} className="theme-btn" >{ctx.theme}</button>
+        }} className="theme-btn" >{ctx.theme}</button> */}
+        <i onClick={() => {
+          ctx.changeTheme(ctx.theme==="Dark"?"Light":"Dark")
+        }} className="fa-solid fa-moon"></i>
+        <i onClick={() => {
+          ctx.changeTheme(ctx.theme==="Dark"?"Light":"Dark")
+        }} className="fa-solid fa-sun"></i>
 
         <ul className="flex">
           <li className="main-list">
