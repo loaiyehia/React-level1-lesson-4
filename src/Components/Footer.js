@@ -1,9 +1,9 @@
-import classes from "./Footer.module.css";
+import  "./Footer.css";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className={classes.loai}>
+    <footer className="loai">
       Designed and developed by Courses4Arab.com
       <span>🧡</span>
     </footer>
